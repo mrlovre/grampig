@@ -10,8 +10,6 @@
 \RequirePackage{ruby}
 \RequirePackage{microtype}
 \RequirePackage{array}
-\RequirePackage[croatian]{babel}
-\RequirePackage{array}
 \RequirePackage{booktabs}
 \RequirePackage{makecell}
 \RequirePackage{tabularx}
@@ -130,9 +128,9 @@
 
 \setlength{\tabcolsep}{0.5ex}
 
-\setCJKmainfont[Scale=MatchUppercase, BoldFont={* SemiBold}, ItalicFont=*]{Source Han Serif JP}
-\setCJKsansfont[Scale=MatchUppercase, BoldFont={* Bold}, ItalicFont=*]{Source Han Sans JP}
-\setmainfont[BoldFont={* Semibold}, Numbers={OldStyle}]{Source Serif Pro}
+\setCJKmainfont[Scale=MatchUppercase, BoldFont={*-SemiBold}, ItalicFont=*]{./_fonts/SourceHanSerifJP.otf}
+\setCJKsansfont[Scale=MatchUppercase, BoldFont={*-Bold}, ItalicFont=*]{./_fonts/SourceHanSansJP.otf}
+\setmainfont[BoldFont={*-Semibold}, Numbers={OldStyle}]{./_fonts/SourceSerifPro.otf}
 
 \setlist{leftmargin=0em,itemsep=0.5em,parsep=0em,partopsep=0em,topsep=0em}
 \setlength{\parindent}{0pt}
@@ -145,12 +143,4 @@
 	\begin{tabular}{@{}p{0.333\width}@{}p{0.333\width}@{}p{0.333\width}@{}}
 		\makecell[lt]{\e{\large\@title}} & \makecell[ct]{\textsc{\e\watermark}} & \makecell[rt]{\@pos}
 	\end{tabular}\br
-}
-
-\newcommandx{\ansline}[2][1=0.8cm, 2=0.1cm]{\hspace{#2}\rule{#1}{0.5pt}\hspace{#2}}
-
-\newcommand{\choicebox}[1]{%
-  \begin{center}%
-    \fbox{\pbox{\linewidth}{\relax\ifvmode\centering\fi #1}}%
-  \end{center}%
 }
