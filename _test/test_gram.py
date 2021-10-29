@@ -75,6 +75,7 @@ for key, e in data.items():
             chunks = str.join(" & ", chunks) + r" \bh"
             print(rf"            {chunks}")
             chunks = re.split(r"(\+|(?:=>))", tvorba.hrv)
+            chunks = [chunk if chunk not in ["+", "=>"] else "" for chunk in chunks]
             chunks = map(markup, chunks)
             chunks = str.join(" & ", chunks) + r" \\"
             print(rf"            {chunks}")
