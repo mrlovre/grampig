@@ -34,12 +34,11 @@
 \definecolor{gray}{HTML}{AAAAAA}
 \definecolor{black}{HTML}{111111}
 
-\newcommand{\backgroundcolor}{SeaGreen4}
-\newcommand{\foregroundcolor}{black}
-\newcommand{\accentcolor}{gray}
-
 \newcommand{\watermark}{\textsc{cursed}}
 
+\newcommand{\backgroundcolor}{white}
+\newcommand{\foregroundcolor}{black}
+\newcommand{\accentcolor}{red}
 
 \DeclareOption{basic}{
 	\renewcommand{\backgroundcolor}{yellow}
@@ -128,9 +127,9 @@
 
 \setlength{\tabcolsep}{0.5ex}
 
-\setCJKmainfont[Scale=MatchUppercase, Extension={.otf}, UprightFont={*-Regular}, BoldFont={*-Bold}, ItalicFont={*-Regular}]{./_fonts/SourceHanSerifJP}
-\setCJKsansfont[Scale=MatchUppercase, Extension={.otf}, UprightFont={*-Regular}, BoldFont={*-Bold}, ItalicFont={*-Regular}]{./_fonts/SourceHanSansJP}
-\setmainfont[Extension={.otf}, UprightFont={*-Regular}, BoldFont={*-Semibold}, Numbers={OldStyle}]{./_fonts/SourceSerifPro}
+\setmainfont[Path={./_fonts/}, Extension={.otf}, UprightFont={*-Regular}, BoldFont={*-Semibold}, ItalicFont={*-It}, BoldItalicFont={*-SemiboldIt}, Numbers={OldStyle}]{SourceSerifPro}
+\setCJKmainfont[Path={./_fonts/}, Extension={.otf}, Scale=MatchUppercase, UprightFont={*-Regular}, BoldFont={*-Bold}, ItalicFont={*-Regular}]{SourceHanSerifJP}
+\setCJKsansfont[Path={./_fonts/}, Extension={.otf}, Scale=MatchUppercase, UprightFont={*-Regular}, BoldFont={*-Bold}, ItalicFont={*-Regular}]{SourceHanSansJP}
 
 \setlist{leftmargin=0em,itemsep=0.5em,parsep=0em,partopsep=0em,topsep=0em}
 \setlength{\parindent}{0pt}
