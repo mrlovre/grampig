@@ -517,3 +517,5 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+### Miscellaneous
+_xelatex_output
