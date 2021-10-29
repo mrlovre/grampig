@@ -130,7 +130,7 @@
 
 \setCJKmainfont[Scale=MatchUppercase, Extension={.otf}, UprightFont={*-Regular}, BoldFont={*-Bold}, ItalicFont={*-Regular}]{./_fonts/SourceHanSerifJP}
 \setCJKsansfont[Scale=MatchUppercase, Extension={.otf}, UprightFont={*-Regular}, BoldFont={*-Bold}, ItalicFont={*-Regular}]{./_fonts/SourceHanSansJP}
-\setmainfont[Extension={.otf}, UprightFont={*-Regular.otf}, BoldFont={*-Semibold.otf}, Numbers={OldStyle}]{./_fonts/SourceSerifPro}
+\setmainfont[Extension={.otf}, UprightFont={*-Regular}, BoldFont={*-Semibold}, Numbers={OldStyle}]{./_fonts/SourceSerifPro}
 
 \setlist{leftmargin=0em,itemsep=0.5em,parsep=0em,partopsep=0em,topsep=0em}
 \setlength{\parindent}{0pt}
