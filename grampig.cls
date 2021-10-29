@@ -128,7 +128,7 @@
 
 \setlength{\tabcolsep}{0.5ex}
 
-\setCJKmainfont[Scale=MatchUppercase, Extension={.otf}, UprightFont={*-Regular}, BoldFont={*-SemiBold}, ItalicFont={*-Regular}]{./_fonts/SourceHanSerifJP}
+\setCJKmainfont[Scale=MatchUppercase, Extension={.otf}, UprightFont={*-Regular}, BoldFont={*-Bold}, ItalicFont={*-Regular}]{./_fonts/SourceHanSerifJP}
 \setCJKsansfont[Scale=MatchUppercase, Extension={.otf}, UprightFont={*-Regular}, BoldFont={*-Bold}, ItalicFont={*-Regular}]{./_fonts/SourceHanSansJP}
 \setmainfont[Extension={.otf}, UprightFont={*-Regular.otf}, BoldFont={*-Semibold.otf}, Numbers={OldStyle}]{./_fonts/SourceSerifPro}
 
