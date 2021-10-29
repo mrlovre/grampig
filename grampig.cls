@@ -36,9 +36,9 @@
 
 \newcommand{\watermark}{\textsc{cursed}}
 
-\newcommand{\backgroundcolor}{white}
-\newcommand{\foregroundcolor}{black}
-\newcommand{\accentcolor}{red}
+\newcommand{\backgroundcolor}{black}
+\newcommand{\foregroundcolor}{white}
+\newcommand{\accentcolor}{gray}
 
 \DeclareOption{basic}{
 	\renewcommand{\backgroundcolor}{yellow}

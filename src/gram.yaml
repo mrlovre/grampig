@@ -1,0 +1,33 @@
+ni1:
+  bless: n
+  kljuc: に
+  rbr: 1
+  vrsta: čestica
+  tezina: basic
+  obj1: Označava primatelja radnje.
+  obj2: Odgovara na pitanja _komu_ ili _čemu_.
+  tvorba:
+    - jap: 母「はは」＋＿に＿⇒＿母「はは」に＿
+      hrv: majka+=>_majci_
+  primjeri:
+    - jap: （手紙）「てがみ」を＿母「はは」に＿書「か」く。
+      hrv: Napisat ću pismo _majci_.
+    - jap: （坂本）「さかもと」さんが＿猫「ねこ」に＿餌「えさ」を上「あ」げた。
+      hrv: Gđa.\ Sakamoto je _mački_ dala hranu.
+    - jap: （花子）「はなこ」さんがパリーから（絵葉書）「えはがき」を（一枚）「いちまい」も＿武「たけし」くんに＿起「おこ」こらなかった。
+      hrv: Hanako nije poslala ni jednu razglednicu iz Pariza _Takešiju_.
+
+de1:
+  bless: n
+  kljuc: で
+  rbr: 1
+  vrsta: čestica
+  tezina: basic
+  obj1: Označava mjesto _radnje_ ili _zbivanja_.
+  obj2: Odgovara na pitanje _gdje_.
+  tvorba:
+    - jap: （公園）「こうえん」＋＿で＿⇒＿（公園）「こうえん」で＿
+      hrv: park+=>_u parku_
+  primjeri:
+    - jap: （子供）「こども」たちが＿（公園）「こうえん」で）＿遊「あそ」んでいる。
+      hrv: Djeca se igraju _u parku_.
