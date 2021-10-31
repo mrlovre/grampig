@@ -1,30 +1,9 @@
-import contextlib
-import os
+import re
 from pathlib import Path
 
 import yaml
-import re
 
-@contextlib.contextmanager
-def redirect_stdout(stream):
-    import sys
-
-    sys.stdout = stream
-    yield
-    sys.stdout = sys.__stdout__
-
-class AttrDict(dict):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.__dict__ = self
-
-        for key, value in self.items():
-            if isinstance(value, dict):
-                self[key] = AttrDict(value)
-            if isinstance(value, list):
-                for i, item in enumerate(value):
-                    if isinstance(item, dict):
-                        self[key][i] = AttrDict(item)
+from utility import AttrDict, redirect_stdout
 
 def furiganize(string):
     string = re.sub(r"(.)「(.*?)」", r"\\f{\1}{\2}", string)

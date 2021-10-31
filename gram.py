@@ -1,30 +1,9 @@
-import contextlib
 import re
 from pathlib import Path
-import os
 
 import yaml
 
-class AttrDict(dict):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.__dict__ = self
-
-        for key, value in self.items():
-            if isinstance(value, dict):
-                self[key] = AttrDict(value)
-            if isinstance(value, list):
-                for i, item in enumerate(value):
-                    if isinstance(item, dict):
-                        self[key][i] = AttrDict(item)
-
-@contextlib.contextmanager
-def redirect_stdout(stream):
-    import sys
-
-    sys.stdout = stream
-    yield
-    sys.stdout = sys.__stdout__
+from utility import AttrDict, redirect_stdout
 
 def markup(string):
     string = re.sub(r"[_＿](.*?)[_＿]", r"\\e{\1}", string)

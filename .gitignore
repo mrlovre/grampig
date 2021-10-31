@@ -519,3 +519,5 @@ cython_debug/
 
 ### Miscellaneous
 _xelatex_output
+png
+tex
