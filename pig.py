@@ -1,5 +1,7 @@
 import re
+import sys
 from pathlib import Path
+import unicodedata
 
 import yaml
 
@@ -17,7 +19,21 @@ def parse_entry(entry):
     return kanji, *rest
 
 with open("src/pig.yaml") as file:
-    data = AttrDict(yaml.safe_load(file))
+    lines = file.read().split("\n")
+    for i, line in enumerate(lines):
+        if "　" in line:
+            print(f"Popravljen japanski razmak u liniji {i}: '{line}'.", file=sys.stderr)
+            is_wide = lambda c: unicodedata.east_asian_width(c) in ["W", "F"]
+            print(len(f"Popravljen japanski razmak u liniji {i}: '") * " "
+                  + str.join("", ["^^" if c == "　" else "  " if is_wide(c) else " " for c in line]), file=sys.stderr)
+
+            line = line.replace("　", " ")
+            lines[i] = line
+
+    lines = str.join("\n", lines)
+    lines
+
+    data = AttrDict(yaml.safe_load(lines))
 
 spaces = 4
 
