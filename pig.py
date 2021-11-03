@@ -6,6 +6,7 @@ import yaml
 from utility import AttrDict, redirect_stdout
 
 def furiganize(string):
+    string = re.sub(r"[(（](.*?)[)）][\[「](.*?)[]」]", r"\\f{\1}{\2}", string)
     string = re.sub(r"(.)「(.*?)」", r"\\f{\1}{\2}", string)
     return string
 
@@ -44,6 +45,7 @@ for key in data.keys():
         title = [entry.pridjev, entry.imenica, entry.glagol]
         title = map(lambda x: re.split(r"\s*,\s*", x)[0], title)
         # title = map(furiganize, title)
+        title = map(lambda x: re.sub(r"[（）()]", "", x), title)
         title = map(lambda x: re.sub(r"「.*?」", "", x), title)
         title = str.join("・", title)
 
