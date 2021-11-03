@@ -59,7 +59,8 @@ for key in data.keys():
         gap = " " * indent * spaces
 
         for key2 in ["pridjev", "imenica", "glagol"]:
-            kanji, znacenje, vrsta = parse_entry(entry[key2])
+            kanji, *znacenje, vrsta = parse_entry(entry[key2])
+            znacenje = str.join(", ", znacenje)
             vrsta = rf"\textit{{{vrsta}}}"
             row = str.join(" & ", [kanji, znacenje, vrsta])
             row += r" \br"
@@ -67,7 +68,8 @@ for key in data.keys():
 
         print(gap + r"\multicolumn{3}{c}{\e{\textsc{GRATIS}}} \br")
 
-        kanji, znacenje, vrsta = parse_entry(entry["katakana"])
+        kanji, *znacenje, vrsta = parse_entry(entry["katakana"])
+        znacenje = str.join(", ", znacenje)
         vrsta = rf"\textit{{{vrsta}}}"
         row = str.join(" & ", [kanji, znacenje, vrsta])
         row += r" \\"
