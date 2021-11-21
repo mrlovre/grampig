@@ -4,6 +4,7 @@
 \LoadClass[10pt,utf8,varwidth=10cm,border=0.5cm]{standalone}
 
 \RequirePackage{zxjatype}
+\RequirePackage{graphicx}
 \RequirePackage{enumitem}
 \RequirePackage{fontspec}
 \RequirePackage[x11names]{xcolor}

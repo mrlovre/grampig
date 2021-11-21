@@ -65,7 +65,16 @@ for key in data.keys():
         title = map(lambda x: re.sub(r"「.*?」", "", x), title)
         title = str.join("・", title)
 
-        print(gap + rf"{{\Large {title}}}")
+        if entry.get("easy", "N") in ["y", "Y", "yes", "Yes", "YES",
+                                      "true", "True", "TRUE",
+                                      "on", "On", "ON", True]:
+            print(gap + rf"{{\Large "
+                        rf"\pbox[c]{{2em}}{{\includegraphics[height=1em]{{_assets/1f437}}}}\hspace{{0.8em}}"
+                        rf"\pbox{{\linewidth}}{{{title}}}\hspace{{0.8em}}"
+                        rf"\pbox[c]{{2em}}{{\includegraphics[height=1em]{{_assets/1f437}}}}}}")
+        else:
+            print(gap + rf"{{\Large {title}}}")
+
         print(gap + r"\vspace{2em}")
         print()
 
