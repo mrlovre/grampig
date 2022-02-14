@@ -52,9 +52,9 @@
 	\renewcommand{\accentcolor}{yellow}
 }
 \DeclareOption{advanced}{
-	\renewcommand{\backgroundcolor}{maroon}
-	\renewcommand{\foregroundcolor}{yellow}
-	\renewcommand{\accentcolor}{orange}
+	\renewcommand{\backgroundcolor}{red}
+	\renewcommand{\foregroundcolor}{black}
+	\renewcommand{\accentcolor}{navy}
 }
 \DeclareOption{pig}{
 	\renewcommand{\backgroundcolor}{maroon}

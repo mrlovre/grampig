@@ -14,8 +14,23 @@ ni1:
       hrv: Napisat ću pismo _majci_.
     - jap: （坂本）「さかもと」さんが＿猫「ねこ」に＿餌「えさ」を上「あ」げた。
       hrv: Gđa.\ Sakamoto je _mački_ dala hranu.
-    - jap: （花子）「はなこ」さんがパリーから（絵葉書）「えはがき」を（一枚）「いちまい」も＿武「たけし」くんに＿起「おこ」こらなかった。
-      hrv: Hanako nije poslala ni jednu razglednicu iz Pariza _Takešiju_.
+    - jap: （花子）「はなこ」さんが＿武「たけし」くんに＿パリーから（絵葉書）「えはがき」を（一枚）「いちまい」も送「おく」らなかった。
+      hrv: Hanako _Takešiju_ nije poslala ni jednu razglednicu iz Pariza.
+      
+ni2:
+  bless: n
+  kljuc: に
+  rbr: 2
+  vrsta: čestica
+  tezina: basic
+  obj1: Označava mjesto gdje neko _stanje traje_.
+  obj2: ""
+  tvorba:
+    - jap: （公園）「こうえん」＋＿に＿⇒＿（公園）「こうえん」に＿
+      hrv: park+=>_u parku_
+  primjeri:
+    - jap: （子供）「こども」たちが＿（公園）「こうえん」に＿遊「あそ」んでいる。
+      hrv: Djeca se igraju _u parku_.
 
 de1:
   bless: n
@@ -23,11 +38,118 @@ de1:
   rbr: 1
   vrsta: čestica
   tezina: basic
-  obj1: Označava mjesto _radnje_ ili _zbivanja_.
-  obj2: Odgovara na pitanje _gdje_.
+  obj1: Označava mjesto gdje se neka _radnja_ ili _zbivanje događa_.
+  obj2: ""
   tvorba:
     - jap: （公園）「こうえん」＋＿で＿⇒＿（公園）「こうえん」で＿
       hrv: park+=>_u parku_
   primjeri:
-    - jap: （子供）「こども」たちが＿（公園）「こうえん」で）＿遊「あそ」んでいる。
+    - jap: （子供）「こども」たちが＿（公園）「こうえん」で＿遊「あそ」んでいる。
       hrv: Djeca se igraju _u parku_.
+
+to1:
+  bless: n
+  kljuc: と
+  rbr: 1
+  vrsta: čestica
+  tezina: basic
+  obj1: Označava uzajaman odnos sa subjektom u rečenici.
+  obj2: Odgovara na pitanje _,,s kim?''_ ili _,,s čim?''_.
+  tvorba:
+    - jap: 友「とも」だち＋＿と＿⇒＿友「とも」だちと＿
+      hrv: prijatelj+=>_s prijateljem_
+  primjeri:
+    - jap: ＿（先生）「せんせい」と＿話「はな」します。
+      hrv: Pričam _s učiteljem_ (i učitelj priča sa mnom).
+    - jap: （来週）「らいしゅう」は＿友「とも」だちと＿（一緒）「いっしょ」に（映画館）「えいがかん」に行「い」きます。
+      hrv: Idući tjedan ću ići skupa _s prijateljem_ u kino.
+      
+to2:
+  bless: n
+  kljuc: と
+  rbr: 2
+  vrsta: veznik
+  tezina: intermediate
+  obj1: Kondicional s neizbježnom posljedicom.
+  obj2: ""
+  tvorba:
+    - jap: ""
+      hrv: ""
+  primjeri:
+    - jap: ""
+      hrv: ""
+      
+nara:
+  bless: n
+  kljuc: なら（ば）
+  vrsta: čestica
+  rbr: ""
+  tezina: intermediate
+  obj1: Kondicional s hipotezom.
+  obj2: ""
+  tvorba:
+    - jap: ""
+      hrv: ""
+  primjeri:
+    - jap: ""
+      hrv: ""
+      
+nitsurete:
+  bless: n
+  kljuc: に連「つ」れて
+  vrsta: složena čestica
+  rbr: ""
+  tezina: advanced
+  obj1: ""
+  obj2: ""
+  tvorba:
+    - jap: ""
+      hrv: ""
+  primjeri:
+    - jap: ""
+      hrv: ""
+      
+nitotte:
+  bless: n
+  kljuc: に取「と」って
+  rbr: ""
+  tezina: advanced
+  vrsta: složena čestica
+  obj1: Označava nečije stajalište.
+  obj2: _Prema komu_ ili _čemu_.
+  tvorba:
+    - jap: （政府）「せいふ」＋＿にとって＿⇒＿（政府）「せいふ」にとって＿
+      hrv: vlada+=>_prema vladi_
+  primjeri:
+    - jap: ""
+      hrv: ""
+      
+niyotte:
+  bless: n
+  kljuc: によって／による
+  rbr: ""
+  tezina: advanced
+  vrsta: složena čestica
+  obj1: ""
+  obj2: _Ovisno o komu_ ili _čemu_.
+  tvorba:
+    - jap: ""
+      hrv: ""
+  primjeri:
+    - jap: ""
+      hrv: ""
+      
+niyoruto:
+  bless: n
+  kljuc: によると／によれば
+  rbr: ""
+  tezina: advanced
+  vrsta: složena čestica
+  obj1: ""
+  obj2: Prema kojem izvoru informacija.
+  tvorba:
+    - jap: ""
+      hrv: ""
+  primjeri:
+    - jap: ""
+      hrv: ""
